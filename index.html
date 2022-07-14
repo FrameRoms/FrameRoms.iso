@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        
+        
+        /* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    position: relative;
+    min-height: 100vh;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.search-box i{
+    position: absolute;
+    z-index: 2;
+    color: #999;
+    top: 50%;
+    left: 15px;
+    font-size: 20px;
+    transform: translateY(-50%);
+}
+.container .images .image-box{
+    position: relative;
+    height: 350px;
+    width: 200px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.text{
+    display: flex;
+    justify-content: center;
+}
+.images{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.images .image-box{
+    left: 43px;
+    position: left 10px;
+    margin: 8px;
+}
+.images .image-box img{
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    transition: transform 0.2s linear;
+}
+.image-box:hover img{
+    transform: scale(1.05);
+    r
+}
+.image-box h6{
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-shadow: #211e1e 3px 3px 3px;  
+}
+
+   .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(29, 28, 28);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    width: 80px;
+    height: 80px;
+}
+
+.loader::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    margin: 8px;
+    animation: spin 1.2s ease infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rodape {
+    left: 60px;
+}
+    </style>
+    
+    
+    
+   
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Frame ROM</title> 
+</head>
+<body>
+    
+    <main>
+       
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </main>
+    <div class="overlay">
+        <div class="loader"></div>
+    </div>
+
+  
+
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="https://www.dropbox.com/s/992ociy136mqstp/icons8-cd-office-l-72.png?dl=0" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Frame ROMs</span>
+                    <span class="profession">Portable ROM</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Pesquise...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="index.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Início</span>
+                        </a>
+                    </li>
+
+                    
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Notificações</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text">Mais vistos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Likes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Assinaturas e Pagamentos</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Sair</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Modo Escuro</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="text">Menu inicial</div>
+    </section>
+<div class="container">
+        
+
+        <div class="images">
+            <div class="image-box" data-name="bomberman">
+                <a href="wilner.html">
+                <img src="https://romsmania.cc/statics/assets/covers/playstation-portable/bomberman-land-europe-en-fr-de-es-it-v1-02-playstation-portable_1482521915.jpg" alt="">
+                <h6>Bomberman land</h6></a>
+            </div>
+            <div class="image-box" data-name="naruto">
+               <a href="Naruto impact.html"><img src="https://romsmania.cc/statics/assets/covers/playstation-portable/naruto-shippuden-ultimate-ninja-impact-usa-en-fr-es-playstation-portable_1483385022.jpg" alt="">
+                <h6>Naruto Shippuden - Ultimate Ninja Impact</h6></a>
+            </div>
+            <div class="image-box" data-name="dragon ball z">
+               <a href="dragon ball z shin Budokai.html"><img src="https://romsmania.cc/statics/assets/covers/playstation-portable/dragon-ball-z-shin-budokai-another-road-usa-playstation-portable_1483072388.jpg" alt="">
+                <h6>DRAGON BALL Z - SHIN BUDOKAI ANOTHER ROAD</h6></a>
+            </div>
+            <div class="image-box" data-name="dragon ball z">
+               <a href="DRAGON BALL Z - TENKAICHI TAG TEAM.html"><img src="https://romsmania.cc/statics/assets/covers/playstation-portable/dragon-ball-z-tenkaichi-tag-team-usa-en-fr-es-playstation-portable_1483072420.jpg" alt="">
+                <h6>DRAGON BALL Z - TENKAICHI TAG TEAM</h6></a>
+            </div>
+            <div class="image-box" data-name="dragon ball z">
+               <a href="dragon ball z shin Budokai.html"><img src="https://static.emulatorgames.net/images/playstation-portable/dragon-ball-z-shin-budokai.webp" alt="">
+                <h6>DRAGON BALL Z - SHIN BUDOKAI</h6></a>
+            </div>
+            <div class="image-box" data-name="gta">
+                <a href="Grand Theft Auto - Vice City Stories.html"><img src="https://romsmania.cc/statics/assets/covers/playstation-portable/grand-theft-auto-vice-city-stories-europe-en-fr-de-es-it-v1-02-playstation-portable_1483588419.jpg" alt="">
+                <h6>GRAND THEFT AUTO - VICE CITY STORIES</h6></a>
+            </div>
+            <div class="image-box" data-name="god of war">
+                <a href="GOD OF WAR - CHAINS OF OLYMPUS.html"><img src="https://romsmania.cc/statics/assets/covers/playstation-portable/god-of-war-chains-of-olympus-usa-playstation-portable_1483385450.jpg" alt="">
+                <h6>GOD OF WAR - CHAINS OF OLYMPUS</h6></a>
+            </div>
+            <div class="image-box" data-name="god of war">
+                <a href="GOD OF WAR - GHOST OF SPARTA.html"><img src="https://romsmania.cc/statics/assets/covers/playstation-portable/god-of-war-koutan-no-kokuin-japan-playstation-portable_1483587245.jpg" alt="">
+                <h6>GOD OF WAR GHOST OF SPARTA</h6></a>
+            </div>
+            <div class="image-box" data-name="naruto">
+                <a href="NARUTO - ULTIMATE NINJA HEROES 2 - THE PHANTOM FORTRESS.html"><img src="https://romsmania.cc/statics/assets/covers/playstation-portable/naruto-ultimate-ninja-heroes-2-the-phantom-fortress-europe-en-fr-de-es-it-playstation-portable_1484334409.jpg" alt="">
+                <h6>NARUTO - ULTIMATE NINJA HEROES 2</h6></a>
+            </div>
+            <div class="image-box" data-name="naruto">
+               <a href="Naruto Shippuden - Legends - Akatsuki Rising.html"><img src="https://romsmania.cc/statics/assets/covers/playstation-portable/naruto-shippuden-legends-akatsuki-rising-europe-en-fr-de-es-it-playstation-portable_1484282947.jpg" alt="">
+                <h6>NARUTO SHIPPUDEN - LEGENDS - AKATSUKI RISING</h6></a>
+            </div>
+               <div class="image-box" data-name="naruto">
+                <a href="Naruto Shippuden - Ultimate Ninja Heroes 3.html"><img src="https://romsmania.cc/statics/assets/covers/playstation-portable/naruto-shippuden-ultimate-ninja-heroes-3-europe-en-fr-de-es-it-playstation-portable_1483385537.jpg" alt="">
+                <h6>NARUTO SHIPPUDEN - ULTIMATE NINJA HEROES 3</h6></a>
+            </div>
+            <div class="image-box" data-name="homem aranha">
+                <a href="Spider-Man 3.html"><img src="https://static.emulatorgames.net/images/playstation-portable/spider-man-3.webp" alt="">
+                <h6></a>
+Spider-Man 3</h6>
+            </div>
+            <div class="image-box" data-name="dante's Inferno">
+                <a href="Dantes Inferno.html"><img src="https://romsmania.cc/statics/assets/covers/playstation-portable/dante-s-inferno-germany-playstation-portable_1483040105.jpg" alt="">
+                <h6>DANTE'S INFERNO</h6></a>
+            </div>
+            <div class="image-box" data-name="ben 10">
+                <a href="Ben 10 - Protector Of Earth.html"><img src="https://romsmania.cc/statics/assets/covers/playstation-portable/ben-10-protector-of-earth-europe-en-fr-de-es-it-playstation-portable_1482474351.jpg" alt="">
+                <h6>BEN 10 - PROTECTOR OF EARTH</h6></a>
+            </div>
+<div class="image-box" data-name="pro evolution soccer">
+                <a href="Pro Evolution Soccer 2014.html"><img src="https://static.emulatorgames.net/images/playstation-portable/pro-evolution-soccer-2014.webp" alt="">
+                <h6>
+Pro Evolution Soccer 2014</h6></a>
+            </div>
+<div class="image-box" data-name="assassin's creed">
+                <a href="Assassins Creed - Bloodlines.html"><img src="https://static.emulatorgames.net/images/playstation-portable/assassins-creed-bloodlines.webp" alt=""><h6></a>
+Assassin's Creed - Bloodlines</h6>
+            </div>
+        </div>
+    </div>    
+    <div class="text"> © Copyright Frame ROMs H&W - 2022</div>
+    
+    
+ <script>
+        const overlay = document.querySelector(".overlay");
+
+// Quando a página for totalmente carregada, o overlay será desabilitado e a página
+// irá aparecer.
+
+window.addEventListener("load", function () {
+    overlay.style.display = "none";
+})
+    </script>
+    <script>
+        const search = document.querySelector(".search-box input"),
+      images = document.querySelectorAll(".image-box");
+
+search.addEventListener("keyup", e =>{
+    if(e.key == "Enter"){
+        let searcValue = search.value,
+            value = searcValue.toLowerCase();
+            images.forEach(image =>{
+                if(value === image.dataset.name){ //matching value with getting attribute of images
+                    return image.style.display = "block";
+                }
+                image.style.display = "none";
+            });
+    }
+});
+
+search.addEventListener("keyup", () =>{
+    if(search.value != "") return;
+
+    images.forEach(image =>{
+        image.style.display = "block";
+    })
+})
+
+        
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+
+
+
+    </script>
+
+</body>
+</html>
